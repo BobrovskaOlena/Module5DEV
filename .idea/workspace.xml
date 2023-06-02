@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0aa1dca1-88b0-4684-b9f3-dc4e6afccffa" name="Changes" comment="" />
+    <list default="true" id="0aa1dca1-88b0-4684-b9f3-dc4e6afccffa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/module5dev/DatabasePopulate2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/module5dev/DatabaseInitService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/module5dev/DatabaseInitService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/module5dev/DatabasePopulateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/module5dev/DatabasePopulateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/module5dev/DatabaseQueryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/module5dev/DatabaseQueryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/module5dev/H2Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/module5dev/H2Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/module5dev/LongestProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/module5dev/LongestProject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/module5dev/MaxProjectCountClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/module5dev/MaxProjectCountClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/module5dev/MaxSalaryWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/module5dev/MaxSalaryWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/module5dev/ProjectPrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/module5dev/ProjectPrice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/module5dev/Property.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/module5dev/Property.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/module5dev/YoungerAndOldestWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/module5dev/YoungerAndOldestWorker.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,8 +30,18 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -26,17 +51,78 @@
     </option>
   </component>
   <component name="ProjectId" id="2Qbexcfch3yKvik53O94YLHVGbT" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/HP/Documents/GitHub/Module5DEV/src/main/resources&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\HP\Documents\GitHub\Module5DEV\src\main\resources" />
+      <recent name="C:\Users\HP\Documents\GitHub\Module5DEV\src\main\resources\com\example\module5dev" />
+      <recent name="C:\Users\HP\Documents\GitHub\Module5DEV\src\main\resources\com\example" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.module5dev" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.DatabaseQueryService">
+    <configuration name="DatabaseInitService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.module5dev.DatabaseInitService" />
+      <module name="Module5DEV.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.module5dev.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DatabasePopulateService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.module5dev.DatabasePopulateService" />
+      <module name="Module5DEV.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.module5dev.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DatabaseQueryService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.module5dev.DatabaseQueryService" />
+      <module name="Module5DEV.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.module5dev.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DatabaseQueryService" />
+        <item itemvalue="Application.DatabasePopulateService" />
+        <item itemvalue="Application.DatabaseInitService" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

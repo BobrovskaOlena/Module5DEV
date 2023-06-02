@@ -1,4 +1,4 @@
-package com.goit.module4;
+package com.example.module5dev;
 
 import java.io.IOException;
 import java.io.InputStream;

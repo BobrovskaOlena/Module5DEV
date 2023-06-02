@@ -1,4 +1,4 @@
-package com.goit.module4;
+package com.example.module5dev;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -13,7 +13,7 @@ public class DatabaseInitService {
         Connection connection = H2Database.getInstance().getH2Connection();
         //завдання 2
         H2Database h2Database = H2Database.getInstance();
-        String sqlFilePathInit = "src/main/resources/com/goit/module4/sql/init_db.sql";
+        String sqlFilePathInit = "src/main/resources/com/example/module5dev/init_db.sql";
 
         try (BufferedReader reader = new BufferedReader(new FileReader(sqlFilePathInit))) {
             StringBuilder queryBuilder = new StringBuilder();

@@ -1,4 +1,4 @@
-package com.goit.module4;
+package com.example.module5dev;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -11,7 +11,7 @@ public class DatabasePopulateService {
         //завдання 3
         Connection connection = H2Database.getInstance().getH2Connection();
         H2Database h2Database = H2Database.getInstance();
-        String sqlFilePathPopulate = "src/main/resources/com/goit/module4/sql/populate_db.sql";
+        String sqlFilePathPopulate = "src/main/resources/com/example/module5dev/populate_db.sql";
 
         try (BufferedReader reader = new BufferedReader(new FileReader(sqlFilePathPopulate))) {
             StringBuilder queryBuilder = new StringBuilder();

@@ -1,4 +1,4 @@
-package com.goit.module4;
+package com.example.module5dev;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -8,21 +8,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-
 public class DatabaseQueryService {
-    Connection connection = H2Database.getInstance().getH2Connection();
-    Statement statement;
+    private final Connection connection;
+    private PreparedStatement preparedStatement;
 
     {
         try {
-            statement = connection.createStatement();
+            connection = H2Database.getInstance().getH2Connection();
+            preparedStatement = connection.prepareStatement("");
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
     }
 
     public List<MaxSalaryWorker> findMaxSalaryWorker() {
-        String sqlFilePath1 = "src/main/resources/com/goit/module4/sql/find_max_salary_worker.sql";
+        String sqlFilePath1 = "src/main/resources/com/example/module5dev/find_max_salary_worker.sql";
         List<MaxSalaryWorker> result = new ArrayList<>();
         try (BufferedReader reader1 = new BufferedReader(new FileReader(sqlFilePath1)))
         {
@@ -32,7 +32,8 @@ public class DatabaseQueryService {
                 queryBuilder.append(line);
             }
             String query1 = queryBuilder.toString();
-            try (ResultSet resultSet = statement.executeQuery(query1)) {
+            preparedStatement = connection.prepareStatement(query1);
+            try (ResultSet resultSet = preparedStatement.executeQuery()) {
                 while (resultSet.next()) {
                     long ID = resultSet.getLong("ID");
                     String name = resultSet.getString("name");
@@ -51,7 +52,7 @@ public class DatabaseQueryService {
     }
 
     public List<MaxProjectCountClient> findMaxProjectsClient() {
-        String sqlFilePath2 = "src/main/resources/com/goit/module4/sql/find_max_projects_client.sql";
+        String sqlFilePath2 = "src/main/resources/com/example/module5dev/find_max_projects_client.sql";
         List<MaxProjectCountClient> result = new ArrayList<>();
 
         try (BufferedReader reader2 = new BufferedReader(new FileReader(sqlFilePath2)))
@@ -62,7 +63,8 @@ public class DatabaseQueryService {
                       queryBuilder.append(line);
                   }
                   String query2 = queryBuilder.toString();
-            ResultSet resultSet = statement.executeQuery(query2);
+                  preparedStatement = connection.prepareStatement(query2);
+                  ResultSet resultSet = preparedStatement.executeQuery();
 
             while (resultSet.next()) {
                 String name = resultSet.getString("name");
@@ -77,7 +79,7 @@ public class DatabaseQueryService {
         return result;
     }
     public List<LongestProject> findLongestProject() {
-        String sqlFilePath3 = "src/main/resources/com/goit/module4/sql/find_longest_project.sql";
+        String sqlFilePath3 = "src/main/resources/com/example/module5dev/find_longest_project.sql";
         List<LongestProject> result = new ArrayList<>();
 
         try (BufferedReader reader3 = new BufferedReader(new FileReader(sqlFilePath3)))
@@ -88,8 +90,8 @@ public class DatabaseQueryService {
                 queryBuilder.append(line);
             }
             String query3 = queryBuilder.toString();
-
-            ResultSet resultSet = statement.executeQuery(query3);
+            preparedStatement=connection.prepareStatement(query3);
+            ResultSet resultSet = preparedStatement.executeQuery();
 
             while (resultSet.next()) {
                 long id = resultSet.getLong("id");
@@ -105,7 +107,7 @@ public class DatabaseQueryService {
     }
 
     public List<YoungerAndOldestWorker> findYoungestAndEldestWorkers() {
-        String sqlFilePath4 = "src/main/resources/com/goit/module4/sql/find_youngest_eldest_workers.sql";
+        String sqlFilePath4 = "src/main/resources/com/example/module5dev/find_youngest_eldest_workers.sql";
         List<YoungerAndOldestWorker> result = new ArrayList<>();
 
         try (BufferedReader reader4 = new BufferedReader(new FileReader(sqlFilePath4))) {
@@ -115,7 +117,8 @@ public class DatabaseQueryService {
                 queryBuilder.append(line);
             }
             String query4 = queryBuilder.toString();
-            ResultSet resultSet = statement.executeQuery(query4);
+            preparedStatement=connection.prepareStatement(query4);
+            ResultSet resultSet = preparedStatement.executeQuery();
 
             while (resultSet.next()) {
                 String type = resultSet.getString("TYPE");
@@ -132,7 +135,7 @@ public class DatabaseQueryService {
     }
 
     public List<ProjectPrice> printProjectPrices() {
-        String sqlFilePath5 = "src/main/resources/com/goit/module4/sql/print_project_prices.sql";
+        String sqlFilePath5 = "src/main/resources/com/example/module5dev/print_project_prices.sql";
         List<ProjectPrice> result = new ArrayList<>();
 
         try (BufferedReader reader5 = new BufferedReader(new FileReader(sqlFilePath5))) {
@@ -142,7 +145,8 @@ public class DatabaseQueryService {
                 queryBuilder.append(line);
             }
             String query5 = queryBuilder.toString();
-            ResultSet resultSet = statement.executeQuery(query5);
+            preparedStatement=connection.prepareStatement(query5);
+            ResultSet resultSet = preparedStatement.executeQuery();
 
             while (resultSet.next()) {
                 long id = resultSet.getLong("id");

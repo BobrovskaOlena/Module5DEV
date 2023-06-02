@@ -1,4 +1,4 @@
-package com.goit.module4;
+package com.example.module5dev;
 
 public class LongestProject {
     long id;
