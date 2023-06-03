@@ -5,9 +5,9 @@ import java.time.LocalDate;
 
 public class DatabasePopulate2 {
     private static final String INSERT1_STRING = "INSERT INTO worker(id, name, birthday, salary, levels) VALUES (?, ?, ?, ?, ?)";
-    private static final String INSERT2_STRING = "INSERT INTO client VALUES (?, ?)";
-    private static final String INSERT3_STRING = "INSERT INTO project VALUES (?, ?, ?, ?)";
-    private static final String INSERT4_STRING = "INSERT INTO project_worker VALUES (?, ?)";
+    private static final String INSERT2_STRING = "INSERT INTO client (id,name)VALUES (?, ?)";
+    private static final String INSERT3_STRING = "INSERT INTO project (id, client_id,start_date,finish_date) VALUES   (?, ?, ?, ?)";
+    private static final String INSERT4_STRING = "INSERT INTO project_worker (project_id, worker_id) VALUES (?, ?)";
     private PreparedStatement insertStatement1;
     private PreparedStatement insertStatement2;
     private PreparedStatement insertStatement3;
