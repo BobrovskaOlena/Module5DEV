@@ -4,24 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0aa1dca1-88b0-4684-b9f3-dc4e6afccffa" name="Changes" comment="1">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/module5dev/forInsert/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/module5dev/forInsert/Project.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/module5dev/forInsert/Project_worker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/module5dev/forInsert/Worker.java" afterDir="false" />
+    <list default="true" id="0aa1dca1-88b0-4684-b9f3-dc4e6afccffa" name="Changes" comment="2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/module5dev/DatabaseInitService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/module5dev/DatabaseInitService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/module5dev/DatabasePopulate2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/module5dev/DatabasePopulate2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/module5dev/DatabaseQueryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/module5dev/DatabaseQueryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/module5dev/H2Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/module5dev/H2Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/module5dev/LongestProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/module5dev/mod4/LongestProject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/module5dev/MaxProjectCountClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/module5dev/mod4/MaxProjectCountClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/module5dev/MaxSalaryWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/module5dev/mod4/MaxSalaryWorker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/module5dev/ProjectPrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/module5dev/mod4/ProjectPrice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/module5dev/Property.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/module5dev/mod4/Property.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/module5dev/YoungerAndOldestWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/module5dev/mod4/YoungerAndOldestWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/module5dev/init_db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/module5dev/init_db.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +68,7 @@
       <recent name="com.example.module5dev" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DatabaseQueryService">
+  <component name="RunManager" selected="Application.DatabasePopulate2">
     <configuration name="DatabaseInitService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.module5dev.DatabaseInitService" />
       <module name="Module5DEV.main" />
@@ -174,11 +160,19 @@
       <option name="project" value="LOCAL" />
       <updated>1685739549570</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2">
+      <created>1685801727046</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685801727046</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="2" />
+    <option name="LAST_COMMIT_MESSAGE" value="2" />
   </component>
 </project>
