@@ -1,11 +1,13 @@
 package com.example.module5dev;
 
+import com.example.module5dev.mod4.Property;
+
 import java.sql.*;
 import java.util.Objects;
 
 public class H2Database {
     private static final H2Database INSTANCE = new H2Database();
-    private static Connection h2Connection;
+    private final Connection h2Connection;
     private H2Database(){
         try{
             h2Connection = DriverManager.getConnection(Objects.requireNonNull(Property.getConnectionUrlForH2()));
@@ -45,7 +47,7 @@ public class H2Database {
     }
     public static void closeConnection(){
         try {
-        h2Connection.close();
+        INSTANCE.getH2Connection().close();
         }catch (SQLException e){
             throw new RuntimeException(e);
         }

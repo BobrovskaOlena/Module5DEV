@@ -1,4 +1,4 @@
-package com.example.module5dev;
+package com.example.module5dev.mod4;
 
 public class MaxSalaryWorker {
     private long ID;

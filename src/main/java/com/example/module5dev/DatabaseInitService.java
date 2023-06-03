@@ -3,15 +3,11 @@ package com.example.module5dev;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.SQLException;
+
 
 
 public class DatabaseInitService {
-    public static void main(String[] args) throws SQLException {
-         //завдання 1
-        Connection connection = H2Database.getInstance().getH2Connection();
-        //завдання 2
+    public static void main(String[] args) {
         H2Database h2Database = H2Database.getInstance();
         String sqlFilePathInit = "src/main/resources/com/example/module5dev/init_db.sql";
 
