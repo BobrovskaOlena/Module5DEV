@@ -20,7 +20,7 @@ public class DatabaseInitService {
                 if (line.trim().endsWith(";")) {
                     String query = queryBuilder.toString();
                     h2Database.executeUpdate(query);
-                    queryBuilder.setLength(0);  // Очищуємо буфер
+                    queryBuilder.setLength(0);
                 }
             }
         } catch (IOException e) {
